@@ -8,9 +8,10 @@ AWK is typically included by default in most Unix-like operating systems, includ
 
 Open a terminal and type the following command:
 
+```
 sudo apt-get update
 sudo apt-get install gawk
-
+```
 
 
 ```
