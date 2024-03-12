@@ -11,6 +11,7 @@ Open a terminal and type the following command:
 ```
 sudo apt-get update
 sudo apt-get install gawk
+gawk --version
 ```
 
 
