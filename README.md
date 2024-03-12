@@ -14,6 +14,33 @@ sudo apt-get install gawk
 gawk --version
 ```
 
+### Example0
+
+```
+# Ackermann function in AWK
+function ackermann(m, n) {
+    if (m == 0) {
+        return n + 1
+    } else if (m > 0 && n == 0) {
+        return ackermann(m - 1, 1)
+    } else if (m > 0 && n > 0) {
+        return ackermann(m - 1, ackermann(m, n - 1))
+    }
+}
+
+# Example: Calculate A(2, 3)
+BEGIN {
+    result = ackermann(2, 3)
+    print "A(2, 3) =", result
+}
+
+```
+
+```
+awk -f ackermann.awk
+
+```
+
 ### Example1
 
 Now, suppose you want to extract and print the names of people who are older than 30. You can use AWK for this task. Here's a simple AWK command:
