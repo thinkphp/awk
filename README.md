@@ -82,5 +82,9 @@ BEGIN {
 
 ```
 awk -f factorial.awk
-
 ```
+
+
+### References
+
+https://www.linode.com/docs/guides/introduction-to-awk/
