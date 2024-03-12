@@ -14,6 +14,9 @@ sudo apt-get install gawk
 gawk --version
 ```
 
+### Examples
+
+Now, suppose you want to extract and print the names of people who are older than 30. You can use AWK for this task. Here's a simple AWK command:
 
 ```
 Name, Age, City
