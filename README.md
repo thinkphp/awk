@@ -15,3 +15,28 @@ David, 40, Chicago
 awk -F', ' '$2 > 30 {print $1}' sample.txt
 
 ```
+
+
+```
+# Calculate the factorial of a number using recursion
+function factorial(n) {
+    if (n <= 1) {
+        return 1
+    } else {
+        return n * factorial(n - 1)
+    }
+}
+
+# Example: Calculate the factorial of 5
+BEGIN {
+    number = 5
+    result = factorial(number)
+    print "The factorial of " number " is: " result
+}
+
+```
+
+```
+awk -f factorial.awk
+
+```
